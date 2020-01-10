@@ -1,0 +1,2 @@
+# discover
+some small ideas
