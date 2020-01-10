@@ -1,0 +1,44 @@
+#
+#  PARKER library - collection of potentials based
+#  around the Catlow oxygen-oxygen potential
+#
+#  O_O2- general O2- species
+#  O_OH  oxygen in hydroxyl group
+#  H_OH  hydrogn in hydroxyl group
+#
+#  References:
+#  (1) M.J.Sanders, M.J.Leslie and C.R.A.Catlow J.Chem.Soc.Chem.Com 1271 1984
+#  (2) P.S.Baram and S.C.Parker Phil.Mag. B 73 1 49-58 1996.
+#  SEE catlow.lib
+#
+species
+Mg    core  2.00000
+Al    core  3.00000
+Si    core  4.00000
+O_O2- core  0.86902
+O_O2- shel -2.86902
+O_OH  core -1.42600
+H_OH  core  0.42600
+
+buckingham
+Si core    O_O2- shel  1283.907 0.32052 10.66158 0.0 12.0
+Si core    O_OH  core   983.556 0.32052 10.66158 0.0 12.0
+O_O2- shel O_O2- shel 22764.000 0.14900 27.87900 0.0 12.0
+O_O2- shel O_OH  core 22764.000 0.14900 27.87900 0.0 12.0
+O_OH  core O_OH  core 22764.000 0.14900 27.87900 0.0 12.0
+Mg core    O_O2- shel  1428.500 0.29453  0.00000 0.0 12.0
+Mg core    O_OH  shel   941.500 0.29453  0.00000 0.0 12.0
+Al core    O_O2- shel  1460.300 0.29912  0.00000 0.0 12.0
+Al core    O_OH  core  1142.678 0.29912  0.00000 0.0 12.0
+
+morse
+O_OH  core H_OH  core 7.0525 2.1986 0.9485 1.0 1.4
+
+spring
+O_O2-  74.92
+
+three
+Si core O_O2- shel O_O2- shel 2.09724 109.47 1.8 1.8 3.2
+Si core O_OH  core O_O2- shel 2.09724 109.47 1.8 1.8 3.2
+Al core O_O2- shel O_O2- shel 2.09724 109.47 1.8 1.8 3.2
+Al core O_OH  core O_O2- shel 2.09724 109.47 1.8 1.8 3.2

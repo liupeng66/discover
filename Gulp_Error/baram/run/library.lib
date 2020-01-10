@@ -1,0 +1,38 @@
+#
+#  BARAM -library of potentials for GULP
+#
+#  from P.S.Baram and S.C.Parker Phil Mag B 73 1 49 (1996) 
+#
+#  Atomistic simulation of hydroxide ions in inorganic solids
+#  Partial charge on O within OH- group
+#
+#  NB I guessed cutoffs and angles for threebody terms
+#
+species
+Si  core  4.00000
+Mg  core  2.00000
+Al  core  3.00000
+H   core  0.40000
+O1  core  0.89502
+O1  shel -2.29502
+O2  core  0.86902
+O2  shel -2.86902
+buckingham
+Si  core O2 shel  1283.907  0.32052  10.66158 0.0 12.0
+Si  core O1 shel   983.556  0.32052  10.66158 0.0 12.0
+O2  shel O2 shel 22764.0    0.149    27.88    0.0 12.0
+O2  shel O1 shel 22764.0    0.149    13.94    0.0 12.0
+O1  shel O1 shel 22764.0    0.149     6.97    0.0 12.0
+H   core O2 shel   311.97   0.25      0.0     0.0 12.0
+Mg  core O2 shel  1428.5    0.29453   0.0     0.0 12.0
+Mg  core O1 shel   941.5    0.29453   0.0     0.0 12.0
+Al  core O2 shel  1460.3    0.29912   0.0     0.0 12.0
+Al  core O1 shel  1142.6775 0.29912   0.0     0.0 12.0
+morse
+H   core O1 shel  7.0525  3.1749  0.9485
+three
+Si core O  shel O  shel 2.097  109.47 2.0 2.0 2.4
+Al core O  shel O  shel 2.097  109.47 2.0 2.0 2.4
+spring
+O1   74.92
+O2   74.92
